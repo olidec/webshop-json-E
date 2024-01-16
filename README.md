@@ -1,128 +1,109 @@
 # Webshop Miniprojekt
 
-In diesem Projekt möchten wir einen kleinen Webshop Schritt für Schritt
-aufbauen. Dabei konzentrieren wir uns auf die Darstellung von einem Datensatz.
+In this project, we aim to build a small webshop step by step, focusing on the representation of a dataset.
 
+## Initialization
 
-## Initialisieren
+Download the project files via GitHub (`CTRL-SHIFT-P` and then `Git:Clone`).
+To start the project, open a terminal in VSCode (`CTRL+SHIFT+P` and then `Terminal: Create new Terminal`). In this terminal, you can execute the following commands:
 
-Laden Sie die Projektdateien via github herunter (`CTRL-SHIFT-P` und dann `Git:Clone`). 
-Um das Projekt dann zu starten, öffnen Sie in VSCode ein Terminal
-(`CTRL+SHIFT+P` und dann `Terminal: Create new Terminal`). In diesem Terminal
-können Sie dann die folgenden Befehle ausführen:
-
-```bash
+```
 npm install
 npm run dev
 ```
 
-Das sollte Ihnen alle benötigten Bibliotheken installieren und einen Webserver
-(ähnlich wie der LiveServer) starten.
+This should install all required libraries and start a web server (similar to LiveServer).
 
-## Verwenden
+## Usage
 
-Wenn Sie gerade den Schritt oben gemacht haben, müssen Sie diesen nicht
-unbedingt ausführen. Wenn Sie aber an dem Projekt weiterarbeiten, dann müssen
-Sie jeweils den Server zuerst wieder starten. Dafür einfach ein Terminal öffnen
-und den folgenden Befehl ausführen:
+If you have just completed the above step, you may not need to execute it again. However, if you continue working on the project, you need to restart the server each time. Simply open a terminal and execute the following command:
 
-```bash
+```
 npm run dev
 ```
 
-Dann können Sie einen Webbrowser mit der URL
-[`http://localhost:5173`](http://localhost:5173) öffnen.
 
-## Aufgaben
+Then, open a web browser with the URL [`http://localhost:5173`](http://localhost:5173).
 
-Sie sollen in diesem Projekt einen kleinen Webshop Schritt für Schritt aufbauen.
-Dafür können Sie den folgenden Aufgaben folgen. Denken Sie daran rgelmässig und ausführlich commits zu setzen.
+## Tasks
 
-### Aufgabe 1
+You are to build a small webshop step by step in this project. Follow the tasks below. Remember to commit regularly and provide detailed commit messages.
 
-Sie finden die Daten für den Webshop in der Datei `public/level-01.json`.
+### Task 1
 
-- Schauen Sie sich die Daten an.
-- Was für Felder sind in den Daten vorhanden?
-- Ändern Sie den Titel und die Beschreibung von einem Artikel.
-- Fügen Sie einen neuen Artikel hinzu.
-- Können Sie einen Artikel ohne Beschreibung haben?
+Find the data for the webshop in the file `public/level-01.json`.
 
-### Aufgabe 2
+- Examine the data.
+- What fields are present in the data?
+- Change the title and description of an article.
+- Add a new article.
+- Can an article exist without a description?
 
-Schauen Sie sich die Datei `index.html` und `src/main.js` an.
+### Task 2
 
-- Versuchen Sie für dich Sinn aus dem Code zu machen. Dies soll nur intuitiv
-  sein.
-- Erklären Sie einer anderen Person was Sie alles verstanden haben.
-- Ergänzen Sie die verstandenen Teile mit Kommentaren.
+Examine the files `index.html` and `src/main.js`.
 
-### Aufgabe 3
+- Try to make sense of the code for yourself. This should be intuitive.
+- Explain to another person what you have understood.
+- Add comments to the parts you understood.
 
-Schauen Sie sich die Datei `src/main.js` an. Und versuchen Sie
-herauszufinden was unbekannte Stellen im Code machen. Formulieren Sie dann
-eigene Kommentare.
+### Task 3
 
-### Aufgabe 4 (Optional)
+Examine the file `src/main.js`. Try to understand unknown parts of the code. Formulate your comments.
 
-Passen Sie den Code so an, dass die Artikel auch Ohne Beschreibung angezeigt
-werden. Es soll dann einfach "Keine Beschreibung" angezeigt werden.
+### Task 4 (Optional)
 
-### Aufgabe 5
+Modify the code so that articles without a description are also displayed, showing "No description".
 
-Wechseln Sie auf das Datenset `public/level-02.json`.
+### Task 5
 
-- Schauen Sie sich die Daten an.
-- Was ist anders als zuvor?
-- Fügen Sie den Preis ebenfalls auf der Webseite ein.
+Switch to the dataset `public/level-02.json`.
 
-### Aufgabe 6
+- Examine the data.
+- What is different from before?
+- Display the price on the webpage.
 
-Wechseln Sie auf das Datenset `public/level-03.json`.
+### Task 6
 
-- Schauen Sie sich die Daten an.
-- Was ist anders als zuvor?
-- Wenn ein Artikel einen reduzierten Preis hat, zeigen Sie nur diesen in grün
-  an.
+Switch to the dataset `public/level-03.json`.
 
-### Aufgabe 7
+- Examine the data.
+- What is different from before?
+- If an article has a discounted price, display only that in green on the webpage.
 
-Kopieren Sie die Datei `public/level-03.json` in die Datei
-`public/level-04.json`.
+### Task 7
 
-- Fügen Sie bei allen Artikeln einen Lagerbestand ein.
-- Ist der Lagerbestand unter 5, markieren Sie das Element orange.
-- Ist der Lagerbestand unter 2, markieren Sie das Element rot.
-- Ist der Lagerbestand 0, zeigen Sie auch dass an. Hier sollen Sie kreativ sein.
+Copy the file `public/level-03.json` to the file `public/level-04.json`.
 
-### Aufgabe 8
+- Add a stock quantity for all articles.
+- If the stock is below 5, mark the element orange.
+- If the stock is below 2, mark the element red.
+- If the stock is 0, indicate that creatively.
 
-Erstellen Sie die neue Datei `public/level-05.json`. Sie können die Datei
-`public/level-04.json` als Vorlage nehmen, oder auch eine vorherige.
+### Task 8
 
-- Fügen Sie bei allen Artikeln eine Bewertung ein.
-- Fügen Sie auch bei einigen Artikeln Kommentare ein.
-- Lassen Sie die Kommentare auf der Webseite anzeigen.
+Create the new file `public/level-05.json`. You can use the file `public/level-04.json` as a template or choose an earlier one.
 
-### Aufgabe 9
+- Add a rating for all articles.
+- Add comments for some articles.
+- Display the comments on the webpage.
 
-Erstellen Sie in der Datei `src/main.js` eine globale Variable `const G = {}`.
+### Task 9
 
-- Fügen Sie in `G` das Feld `from` mit dem Wert 0 ein.
-- Fügen Sie in `G` das Feld `to` mit dem Wert 5 ein.
-- Zeigen Sie nur Artikel mit dem index zwischen `G.from` und `G.to` an.
+Create a global variable `const G = {}` in the file `src/main.js`.
 
-### Aufgabe 10 (Optional)
+- Add the field `from` to `G` with the value 0.
+- Add the field `to` to `G` with the value 5.
+- Display only articles with the index between `G.from` and `G.to`.
 
-Erstellen Sie 2 Buttons auf der Webseite mit `weiter` und `zurück`. Die Buttons
-sollen jeweils die Variable `G` so verändern, dass die nächste Seite angezeigt
-wird.
+### Task 10 (Optional)
 
-### Aufgabe 11
+Create 2 buttons on the webpage with "next" and "back". The buttons should each modify the variable `G` to display the next page.
 
-Suchen Sie im Internet nach einem weiteren Datensatz im JSON Format. Es müssen
-nicht unbedingt Daten für einen Webshop sein.
+### Task 11
 
-- Kopieren Sie den Datensatz in `public/level-06.json`.
-- Untersuchen Sie den Datensatz.
-- Stellen Sie diesen Datensatz auf Ihrer Webseite dar.
+Search the internet for another dataset in JSON format. It does not necessarily have to be data for a webshop.
+
+- Copy the dataset to `public/level-06.json`.
+- Examine the dataset.
+- Display this dataset on your webpage.
